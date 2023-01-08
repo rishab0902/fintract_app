@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const List<String> list = <String>['One', 'Two', 'Three', 'Four'];
+// const List<String> list = <String>['One', 'Two', 'Three', 'Four'];
 
 enum OtpType { Email, Phone }
 
@@ -13,16 +13,16 @@ class Ftlogin extends StatefulWidget {
 
 class _FtloginState extends State<Ftlogin> {
   _FtloginState() {
-    _selectedVal = _productsizelist as String?;
+    _selectedVal = _productsizelist[0];
   }
 
   OtpType? _otpType;
-  final _productsizelist = {
+  final _productsizelist = [
     "select Customer",
     "CUSTOMER",
     "BANK ADMIN",
     "FINTRACT ADMIN",
-  };
+  ];
   String? _selectedVal = "select Customer";
 
   @override
